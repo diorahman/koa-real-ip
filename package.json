@@ -1,0 +1,19 @@
+{
+  "name": "koa-real-ip",
+  "version": "1.0.0",
+  "description": "Removes local and AWS IPs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Dhi Aurrahman <dio@hooq.tv>",
+  "license": "MIT",
+  "devDependencies": {
+    "koa": "^2.2.0",
+    "mocha": "^3.3.0",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "is-aws-ip": "^1.0.0"
+  }
+}
