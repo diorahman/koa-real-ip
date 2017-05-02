@@ -44,7 +44,7 @@ describe('integration', () => {
     })
   })
 
-  describe('getting the real ip, proxy = false', function () {
+  describe('proxy = false', function () {
     before(function () {
       app = new Koa()
       app.use(realIp())
