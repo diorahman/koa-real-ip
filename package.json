@@ -9,11 +9,22 @@
   "author": "Dhi Aurrahman <dio@hooq.tv>",
   "license": "MIT",
   "devDependencies": {
-    "koa": "^2.2.0",
+    "koa": "2.0.0-alpha.3",
     "mocha": "^3.3.0",
     "supertest": "^3.0.0"
   },
   "dependencies": {
     "is-aws-ip": "^1.0.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diorahman/koa-real-ip.git"
+  },
+  "bugs": {
+    "url": "https://github.com/diorahman/koa-real-ip/issues"
+  },
+  "homepage": "https://github.com/diorahman/koa-real-ip#readme"
 }

@@ -34,7 +34,14 @@ module.exports = function () {
                 })
 
                 let ip = ips[0]
-                ctx.request.ip = ip || ctx.request.ip
+                let currentIp = ctx.request.ip
+
+                // redefine the getter
+                Object.defineProperty(ctx.request, 'ip', {
+                  get: function () {
+                    return ip || currentIp
+                  }
+                })
               }
               return next()
             })
